@@ -11,7 +11,7 @@ public class ContaPoupanca extends Conta{
     }
 
     @Override
-    void sacar(Double valor) {
+    public void sacar(Double valor) {
         if(valor <= 0 ) {
             throw new RuntimeException("Valor inválido");
         } else {
@@ -31,7 +31,7 @@ public class ContaPoupanca extends Conta{
     }
 
     @Override
-    void tranferir(Conta contaDestino, Double valor) {
+    public void tranferir(Conta contaDestino, Double valor) {
         if(valor > 0 && valor <= getSaldo()) {
             contaDestino.depositar(valor);
             //adiciona evento ao extrato conta destino

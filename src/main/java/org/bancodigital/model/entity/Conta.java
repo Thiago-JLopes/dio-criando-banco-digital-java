@@ -55,10 +55,10 @@ public abstract class Conta {
     }
 
     //métodos abstratos
-    abstract void sacar(Double valor);
-    abstract void tranferir(Conta contaDestino, Double valor);
+    public abstract void sacar(Double valor);
+    public abstract void tranferir(Conta contaDestino, Double valor);
 
-    void depositar(Double valor) {
+    public void depositar(Double valor) {
         if(valor > 0) {
             saldo += valor;
             System.out.println("Depósito realizado com sucesso.");
@@ -69,11 +69,11 @@ public abstract class Conta {
         }
     }
 
-    void adicionarExtrato(Extrato novoExtrato) {
+    protected void adicionarExtrato(Extrato novoExtrato) {
         this.extrato.add(novoExtrato);
     }
 
-    void exibirExtrato() {
+    public void exibirExtrato() {
         System.out.println(this.extrato);
     }
 

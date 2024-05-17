@@ -19,12 +19,11 @@ public class Extrato {
 
     @Override
     public String toString() {
-        return "Extrato{" +
-                "dataHora=" + dataHora +
-                ", tipoTransacao='" + tipoTransacao + '\'' +
-                ", valor=" + valor +
-                ", saldoAtual=" + saldoAtual +
-                ", descricao='" + descricao + '\'' +
-                '}';
+        return "EXTRATO " +
+                "dataHora " + dataHora +
+                "\n    Transacao " + tipoTransacao +
+                "\n    Valor " + valor +
+                "\n    Saldo Atual " + saldoAtual +
+                "\n    Descricao " + descricao + "\n\n";
     }
 }

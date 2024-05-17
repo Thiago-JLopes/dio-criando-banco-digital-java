@@ -50,6 +50,10 @@ public class Cliente {
         return contasCliente.get(numeroConta);
     }
 
+    public Map<Long, Conta> getContasCliente() {
+        return contasCliente;
+    }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -74,4 +78,13 @@ public class Cliente {
         contasCliente.put(conta.getNumero(), conta);
         System.out.println("Conta criada com sucesso.");
     }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "nome='" + nome + '\'' +
+                ", cpf='" + cpf + '\'' +
+                '}';
+    }
 }
+
