@@ -27,6 +27,8 @@ As classes `ContaCorrente` e `ContaPoupanca` herdam da classe `Conta`, reutiliza
 ### Polimorfismo
 Os métodos de `Conta` podem ser sobrescritos (overridden) nas classes filhas (`ContaCorrente` e `ContaPoupanca`), permitindo comportamentos específicos para cada tipo de conta.
 
+### Diagrama de classes básico
+![Diagrama de classes](/assets/SistemaBancario1.drawio.png)
 
 ## Autor
 Desenvolvido por [Thiago José Lopes](https://github.com/Thiago-JLopes).
