@@ -49,6 +49,11 @@ public abstract class Conta {
     protected void setSaldo(Double saldo) {
         this.saldo = saldo;
     }
+
+    public boolean validarAcesso(int senha) {
+        return senha == this.senha;
+    }
+
     //métodos abstratos
     abstract void sacar(Double valor);
     abstract void tranferir(Conta contaDestino, Double valor);
